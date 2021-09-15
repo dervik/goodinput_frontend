@@ -11,7 +11,7 @@ export class AppComponent implements OnInit{
 
   showSidebar: boolean = true;
   showNavbar: boolean = true;
-  showFooter: boolean = true;
+  showFooter: boolean = false;
   isLoading: boolean;
 
   constructor(private router: Router) {
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit{
         } else {
           this.showSidebar = true;
           this.showNavbar = true;
-          this.showFooter = true;
+          this.showFooter = false;
           document.querySelector('.main-panel').classList.remove('w-100');
           document.querySelector('.page-body-wrapper').classList.remove('full-page-wrapper');
           document.querySelector('.content-wrapper').classList.remove('auth', 'auth-img-bg');
