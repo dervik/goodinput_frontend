@@ -1,0 +1,47 @@
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Umfragen</h4>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>
+                    <b>Titel</b>
+                </th>
+                <th>
+                    <b>Aktiv</b>
+                </th>
+                <th>
+                    <b>Teilnehmerrate</b>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let umfrage of umfragen'>
+                    <td class="py-1">
+                        {{ umfrage.titel }}
+                    </td>
+                    <td>
+                        {{ umfrage.active }}
+                    </td>
+                    <td>
+                        {{ umfrage.teilnehmerrate }}%
+                    </td>
+                </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Durchschnitte geschlossener Fragen im zeitlichen Verlauf</h4>
+        <canvas baseChart [chartType]="'line'" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors"></canvas>
+    </div>
+    </div>
+</div>

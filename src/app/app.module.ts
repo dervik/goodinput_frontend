@@ -17,6 +17,7 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { ContentAnimateDirective } from './shared/directives/content-animate.directive';
 import { TodoListComponent } from './apps/todo-list/todo-list.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ProjectUmfragenComponent } from './project-umfragen/project-umfragen.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ProjectsComponent } from './projects/projects.component';
     TodoComponent,
     SpinnerComponent,
     ContentAnimateDirective,
-    ProjectsComponent
+    ProjectsComponent,
+    ProjectUmfragenComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-import { Project } from './project-interface';
+import { Project } from './interfaces';
 
 export const PROJECTS: Project[] = [
   { projectID: 1, titel: 'Sauberkeit der Räumlichkeiten', ersteller: 'Otto', intervall: 14, kategorie:'Kantine', progress: 25 },
