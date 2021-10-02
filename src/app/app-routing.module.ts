@@ -3,12 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectUmfragenComponent } from './project-umfragen/project-umfragen.component';
+import { ProjectEditComponent } from './project-edit/project-edit.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'umfragen/:id', component: ProjectUmfragenComponent },
+  { path: 'project/:id/umfragen', component: ProjectUmfragenComponent },
+  { path: 'project/:id/edit', component: ProjectEditComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'basic-ui', loadChildren: () => import('./basic-ui/basic-ui.module').then(m => m.BasicUiModule) },
   { path: 'charts', loadChildren: () => import('./charts/charts.module').then(m => m.ChartsDemoModule) },
