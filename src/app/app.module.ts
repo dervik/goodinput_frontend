@@ -19,6 +19,7 @@ import { TodoListComponent } from './apps/todo-list/todo-list.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectUmfragenComponent } from './project-umfragen/project-umfragen.component';
 import { ProjectEditComponent } from './project-edit/project-edit.component';
+import { ProjectCreateComponent } from './project-create/project-create.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ProjectEditComponent } from './project-edit/project-edit.component';
     ContentAnimateDirective,
     ProjectsComponent,
     ProjectUmfragenComponent,
-    ProjectEditComponent
+    ProjectEditComponent,
+    ProjectCreateComponent
   ],
   imports: [
     BrowserModule,

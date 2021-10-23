@@ -4,6 +4,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectUmfragenComponent } from './project-umfragen/project-umfragen.component';
 import { ProjectEditComponent } from './project-edit/project-edit.component';
+import { ProjectCreateComponent } from './project-create/project-create.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'project/:id/umfragen', component: ProjectUmfragenComponent },
   { path: 'project/:id/edit', component: ProjectEditComponent },
+  { path: 'project/create', component: ProjectCreateComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'basic-ui', loadChildren: () => import('./basic-ui/basic-ui.module').then(m => m.BasicUiModule) },
   { path: 'charts', loadChildren: () => import('./charts/charts.module').then(m => m.ChartsDemoModule) },
