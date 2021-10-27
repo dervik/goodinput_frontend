@@ -1,0 +1,40 @@
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Umfrage-Projekte</h4>
+        
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>
+                    <b>Titel</b>
+                </th>
+                <th>
+                    <b>Erstellt am</b>
+                </th>
+                <th>
+                    <b>Teilnehmerrate</b>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let umfrage of umfragen'>
+                    <ng-container *ngIf="umfrage.active">
+                        <td class="py-1">
+                            <a routerLink="/umfrage/{{umfrage.umfrageID}}">{{ umfrage.titel }}</a>
+                        </td>
+                        <td>
+                            {{ umfrage.timestampCreation }}
+                        </td>
+                        <td>
+                            {{ umfrage.teilnehmerrate }}%
+                        </td>
+                    </ng-container>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+    </div>
+</div>

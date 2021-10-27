@@ -20,6 +20,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProjectUmfragenComponent } from './project-umfragen/project-umfragen.component';
 import { ProjectEditComponent } from './project-edit/project-edit.component';
 import { ProjectCreateComponent } from './project-create/project-create.component';
+import { UmfragenComponent } from './umfragen/umfragen.component';
+import { UmfrageComponent } from './umfrage/umfrage.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { ProjectCreateComponent } from './project-create/project-create.componen
     ProjectsComponent,
     ProjectUmfragenComponent,
     ProjectEditComponent,
-    ProjectCreateComponent
+    ProjectCreateComponent,
+    UmfragenComponent,
+    UmfrageComponent
   ],
   imports: [
     BrowserModule,

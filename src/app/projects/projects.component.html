@@ -6,7 +6,7 @@
             <h4 class="card-title">Umfrage-Projekte</h4>
           </div>
           <div class="col-sm">
-            <button routerLink="/project/create" id="button" class="btn btn-success">
+            <button routerLink="/projekt/create" id="button" class="btn btn-success">
               Umfrage erstellen
             </button>
           </div>
@@ -35,7 +35,7 @@
             <tbody>
                 <tr *ngFor='let project of projects'>
                     <td class="py-1">
-                      <a routerLink="/project/{{project.projectID}}/umfragen">{{ project.titel }}</a>
+                      <a routerLink="/projekt/{{project.projectID}}/umfragen">{{ project.titel }}</a>
                     </td>
                     <td>
                         {{ project.ersteller }}
@@ -52,7 +52,7 @@
                         </div>
                     </td>
                     <td>
-                      <a routerLink="/project/{{project.projectID}}/edit">
+                      <a routerLink="/projekt/{{project.projectID}}/edit">
                         <i class="mdi mdi-pencil"></i>
                       </a>
                     </td>
