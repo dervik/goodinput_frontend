@@ -27,9 +27,8 @@
     </li>
     <li class="nav-item" [ngClass]="{ 'active': umfragen.isActive }">
       <a class="nav-link" routerLink="/umfragen" routerLinkActive #umfragen="routerLinkActive">
-        <span class="menu-title">Umfragen
-        </span>
-        <i class="mdi mdi-chart-arc"></i>
+        <span class="menu-title">Umfragen</span>
+        <i class="mdi mdi-chart-arc menu-icon"></i>
       </a>
     </li>
     <li class="nav-item" [ngClass]="{ 'active' : blankPage.isActive || login.isActive || register.isActive || error404.isActive || error500.isActive }">

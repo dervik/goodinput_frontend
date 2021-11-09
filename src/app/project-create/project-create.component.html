@@ -1,53 +1,57 @@
 <div class="col-12 grid-margin stretch-card">
     <div class="card">
       <div class="card-body">
-        <h4 class="card-title">erstellen</h4>
+        <h4 class="card-title"> Projekt erstellen</h4>
         <p class="card-description">
           Erstellung eines neuen Projektes
         </p>
-        <h5>Allgemeines</h5>
+        <h5><b>Allgemeines</b></h5>
         <form class="forms-sample">
           <div class="form-group">
             <label for="exampleInputName1">Titel</label>
-            <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
+            <input type="text" class="form-control" id="exampleInputName1" placeholder="z.B. Weiterbildungsmöglichkeiten">
           </div>
 
           <div class="form-group">
-            <label for="exampleInputEmail3">Teilnehmer</label>
-            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+            <label for="exampleSelectGender">Teilnehmer</label>
+              <ng-multiselect-dropdown
+              [placeholder]="'Umfrageteilnehmer aussuchen'"
+              [settings]="dropdownSettings"
+              [data]="dropdownList"
+              [(ngModel)]="selectedItems"
+              (onSelect)="onItemSelect($event)"
+              (onSelectAll)="onSelectAll($event)"
+            >
+            </ng-multiselect-dropdown>
           </div>
+
           <div class="form-group">
             <label for="exampleInputPassword4">Intervall</label>
-            <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
+            <input type="number" class="form-control" id="interval" value="14">
           </div>
-          <h5>Umfrage</h5>
+
+          <h5><b>Umfrage</b></h5>
+          <h5>Geschlossene Fragen</h5>
           <div class="form-group">
-            <label for="exampleSelectGender">Gender</label>
-              <select class="form-control" id="exampleSelectGender">
-                <option>Male</option>
-                <option>Female</option>
-              </select>
-            </div>
-          <div class="form-group">
-            <label>File upload</label>
-            <input type="file" name="img[]" class="file-upload-default">
-            <div class="input-group col-xs-12">
-              <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
-              <span class="input-group-append">
-                <button class="file-upload-browse btn btn-gradient-primary" type="button">Upload</button>
-              </span>
-            </div>
+            <label for="exampleTextarea1">Frage 1</label>
+            <textarea class="form-control" id="exampleTextarea1" rows="2"></textarea>
           </div>
           <div class="form-group">
-            <label for="exampleInputCity1">City</label>
-            <input type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
+            <label for="exampleTextarea2">Frage 2</label>
+            <textarea class="form-control" id="exampleTextarea2" rows="2"></textarea>
+          </div>
+          
+          <h5>Offene Fragen</h5>
+          <div class="form-group">
+            <label for="exampleTextarea3">Frage 1</label>
+            <textarea class="form-control" id="exampleTextarea3" rows="2"></textarea>
           </div>
           <div class="form-group">
-            <label for="exampleTextarea1">Textarea</label>
-            <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+            <label for="exampleTextarea4">Frage 2</label>
+            <textarea class="form-control" id="exampleTextarea4" rows="2"></textarea>
           </div>
-          <button type="submit" class="btn btn-gradient-primary mr-2">Submit</button>
-          <button class="btn btn-light">Cancel</button>
+          <button type="submit" class="btn btn-gradient-primary mr-2">Erstellen</button>
+          <button class="btn btn-light">Abbrechen</button>
         </form>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,6 +23,7 @@ import { ProjectEditComponent } from './project-edit/project-edit.component';
 import { ProjectCreateComponent } from './project-create/project-create.component';
 import { UmfragenComponent } from './umfragen/umfragen.component';
 import { UmfrageComponent } from './umfrage/umfrage.component';
+
 
 @NgModule({
   declarations: [
@@ -48,7 +50,8 @@ import { UmfrageComponent } from './umfrage/umfrage.component';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    ChartsModule
+    ChartsModule,
+    NgMultiSelectDropDownModule.forRoot()
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent]
