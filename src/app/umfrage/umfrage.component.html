@@ -3,11 +3,24 @@
       <div class="card-body">
 
         <div *ngFor='let frage of fragen'>
-            {{ frage.inhalt }}
-            <input *ngIf="frage.art == 'geschlossen'" type="range" class="form-range" id="customRange1" min="1" max="5" value = "3">
-            <textarea *ngIf="frage.art == 'offen'" id="textarea1" rows = "2"> </textarea>
+          {{ frage.inhalt }}
+          <br>
+          <input *ngIf="frage.art == 'geschlossen'" type="range" class="form-range" id="customRange" min="1" max="7" value = "4">
+          <textarea *ngIf="frage.art == 'offen'" id="textarea" rows="3" style="height:100%; width:100%"> </textarea>
         </div>
-        <button type="Einreichen" class="btn btn-gradient-primary mr-2">Erstellen</button>
+
+        <button type="Einreichen" class="btn btn-gradient-primary mr-2">Antwort einreichen</button>
+
       </div>
     </div>
   </div>
+
+
+
+
+
+<!--
+
+        
+
+-->
