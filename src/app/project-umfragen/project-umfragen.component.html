@@ -20,7 +20,7 @@
             <tbody>
                 <tr *ngFor='let umfrage of umfragen'>
                     <td class="py-1">
-                        {{ umfrage.titel }}
+                      <a routerLink="/projekt/{{umfrage.projectID}}/{{umfrage.umfrageID}}">{{ umfrage.titel }}</a>
                     </td>
                     <td>
                         {{ umfrage.active }}

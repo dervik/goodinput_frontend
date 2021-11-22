@@ -7,6 +7,7 @@ import { ProjectEditComponent } from './project-edit/project-edit.component';
 import { ProjectCreateComponent } from './project-create/project-create.component';
 import { UmfragenComponent } from './umfragen/umfragen.component';
 import { UmfrageComponent } from './umfrage/umfrage.component';
+import { UmfrageAuswertungComponent } from './umfrage-auswertung/umfrage-auswertung.component';
 
 
 
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'projekt/:id/umfragen', component: ProjectUmfragenComponent },
   { path: 'projekt/:id/edit', component: ProjectEditComponent },
   { path: 'projekt/create', component: ProjectCreateComponent },
+  { path: 'projekt/:id/:uid', component: UmfrageAuswertungComponent },
   { path: 'umfragen', component: UmfragenComponent },
   { path: 'umfrage/:id', component: UmfrageComponent },
   { path: 'dashboard', component: DashboardComponent },
