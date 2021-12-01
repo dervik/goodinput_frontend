@@ -45,38 +45,49 @@ export class UmfrageAuswertungComponent implements OnInit {
   public bubbleChartData: ChartDataSets[] = [
     {
       data: [
-        { x: 4, y: 3, r: 10 },
+        { x: 4, y: 3, r: 70 },
       ],
       label: 'Boden',
     },
     {
       data: [
-        { x: 3, y: 5, r: 20 },
+        { x: 3, y: 5, r: 50 },
       ],
       label: 'Tisch',
     },
     {
       data: [
-        { x: 1, y: 2, r: 3 },
+        { x: 1.5, y: 2, r: 10 },
       ],
       label: 'Fleck',
+    },
+    {
+      data: [
+        { x: 3, y: 3, r: 45 },
+      ],
+      label: 'Gang',
     }
   ];
 
   public bubbleChartColors: Color[] = [
     {
       backgroundColor: [
-        'red',
+        'rgba(255, 0, 0, 0.5)',
       ]
     },
     {
       backgroundColor: [
-        'green',
+        'rgba(0, 255, 0, 0.5)',
       ]
     },
     {
       backgroundColor: [
-        'blue',
+        'rgba(0, 0, 255, 0.5)'
+      ]
+    },
+    {
+      backgroundColor: [
+        'rgba(0, 255, 255, 0.5)'
       ]
     }
   ];

@@ -11,10 +11,7 @@
                     <b>Titel</b>
                 </th>
                 <th>
-                    <b>Erstellt am</b>
-                </th>
-                <th>
-                    <b>Teilnehmerrate</b>
+                    <b>Status</b>
                 </th>
               </tr>
             </thead>
@@ -25,11 +22,9 @@
                             <a routerLink="/umfrage/{{umfrage.umfrageID}}">{{ umfrage.titel }}</a>
                         </td>
                         <td>
-                            {{ umfrage.timestampCreation }}
+                            offen
                         </td>
-                        <td>
-                            {{ umfrage.teilnehmerrate }}%
-                        </td>
+
                     </ng-container>
                 </tr>
             </tbody>

@@ -2,10 +2,12 @@
     <div class="card">
     <div class="card-body">
         <h4 class="card-title">Meistgenutzte Wörter</h4>
+        <!--
         <div class="button-box col-lg-12">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               X-Achse
             </button>
+            
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="#">Sauberkeit</a>
               <a class="dropdown-item" href="#">Zufriedenheit</a>
@@ -19,9 +21,30 @@
                 <a class="dropdown-item" href="#">Zufriedenheit</a>
                 <a class="dropdown-item" href="#">Umsetzung</a>
             </div>
-              
           </div>
+          -->
         <canvas baseChart [datasets]="bubbleChartData" [options]="bubbleChartOptions" [colors]="bubbleChartColors" [chartType]="bubbleChartType"></canvas>
     </div>
     </div>
-</div>
+  </div>
+
+  <div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+          <h4 class="card-title">Texte bezogen auf das Wort: <b>Boden</b></h4>
+          <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="klein">
+                Wenn man im Winter den Gang betritt ist der Boden am Eingang meist unsauber.
+              </div>
+              <div class="klein">
+                Der Boden könnte häufiger gereinigt werden.
+              </div>
+              <div class="klein">
+                Vor allem in den Produktionshallen befinden sich an den Böden viele Reste von Bodenmarkierungen.
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
