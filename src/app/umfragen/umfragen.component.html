@@ -1,7 +1,7 @@
 <div class="col-lg-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">Umfrage-Projekte</h4>
+            <h4 class="card-title">Umfragen</h4>
         
         <div class="table-responsive">
           <table class="table table-striped">
@@ -16,10 +16,10 @@
               </tr>
             </thead>
             <tbody>
-                <tr *ngFor='let umfrage of umfragen'>
+                <tr *ngFor='let umfrage of umfragen' class="table-row" routerLink="/umfrage/{{umfrage.umfrageID}}">
                     <ng-container *ngIf="umfrage.active">
                         <td class="py-1">
-                            <a routerLink="/umfrage/{{umfrage.umfrageID}}">{{ umfrage.titel }}</a>
+                            <b><span class="title">{{ umfrage.titel }}</span></b>
                         </td>
                         <td>
                             offen

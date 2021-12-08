@@ -33,9 +33,9 @@
               </tr>
             </thead>
             <tbody>
-                <tr *ngFor='let project of projects'>
+                <tr class="table-row" *ngFor='let project of projects' routerLink="/projekt/{{project.projectID}}/umfragen">
                     <td class="py-1">
-                      <a routerLink="/projekt/{{project.projectID}}/umfragen">{{ project.titel }}</a>
+                        <b><span class="title">{{ project.titel }}</span></b>
                     </td>
                     <td>
                         {{ project.ersteller }}
@@ -52,12 +52,12 @@
                         </div>
                     </td>
                     <td>
-                      <a routerLink="/projekt/{{project.projectID}}/edit">
+                      <a routerLink="/projekt/{{project.projectID}}/edit" style="color: #1F1956; text-decoration: none;">
                         <i class="mdi mdi-pencil"></i>
                       </a>
                     </td>
                     <td>
-                        <i class="mdi mdi-delete"></i>
+                        <i class="mdi mdi-delete" style="color: #1F1956;"></i>
                     </td>
                     </tr>
               

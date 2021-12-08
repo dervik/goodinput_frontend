@@ -18,9 +18,9 @@
               </tr>
             </thead>
             <tbody>
-                <tr *ngFor='let umfrage of umfragen'>
+                <tr *ngFor='let umfrage of umfragen' class="table-row" routerLink="/projekt/{{umfrage.projectID}}/{{umfrage.umfrageID}}">
                     <td class="py-1">
-                      <a routerLink="/projekt/{{umfrage.projectID}}/{{umfrage.umfrageID}}">{{ umfrage.titel }}</a>
+                      <b><span class="title">{{ umfrage.titel }}</span></b>
                     </td>
                     <td>
                         {{ umfrage.active }}

@@ -18,7 +18,22 @@ input{
 
 
 .form-range{
-    color: #FFFFFF !important; //"1F1956"
     height:100%; 
     width:100%;
+}
+
+input[type="range"]{
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    border-radius: 6px;
+    height: 6px;
+    background-color: #7772a7;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    border: 1px solid #1F1956;
+    height: 15px;
+    width: 15px;
+    cursor : "pointer";
 }
